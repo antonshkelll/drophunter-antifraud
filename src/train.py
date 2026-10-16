@@ -60,7 +60,7 @@ def build_features() -> tuple[pd.DataFrame, pd.DataFrame]:
     periods = [("2026-04-01", "2026-05-31"), ("2026-05-31", "2026-07-30")]
     out = []
     for p_start, p_end in periods:
-        df = con.execute(sql, {"p_start": p_start, "p_end": p_end}).df()
+        df = con.execute(sql, {"p_start": p_start, "p_end": p_end}).df().sort_values("client_id", ignore_index=True)
         out.append(df)
     return out[0], out[1]
 
@@ -109,9 +109,11 @@ def main() -> None:
         "Правила": None,
         "Логистическая регрессия": make_pipeline(log1p, StandardScaler(),
                                                  LogisticRegression(max_iter=2000, class_weight="balanced")),
+        # early_stopping выключен: иначе бустинг сам откладывает случайные 10% под валидацию,
+        # и результат зависит от порядка строк; число деревьев задаём явно
         "Градиентный бустинг": HistGradientBoostingClassifier(
-            max_iter=400, learning_rate=0.05, max_leaf_nodes=31, l2_regularization=1.0,
-            class_weight="balanced", random_state=0),
+            max_iter=150, learning_rate=0.05, max_leaf_nodes=31, l2_regularization=1.0,
+            early_stopping=False, class_weight="balanced", random_state=0),
     }
     value = test.in_sum.to_numpy() * SAVED_SHARE
     scores, results = {}, {}

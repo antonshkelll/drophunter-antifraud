@@ -104,3 +104,4 @@ LEFT JOIN out_feat o   USING (client_id)
 LEFT JOIN lag_to_out l USING (client_id)
 JOIN label lb          USING (client_id)
 WHERE coalesce(i.in_cnt, 0) > 0          -- скорим только клиентов с входящими в периоде
+ORDER BY c.client_id                     -- фиксированный порядок строк: иначе результаты модели «плавают»

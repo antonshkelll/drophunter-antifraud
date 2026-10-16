@@ -19,19 +19,19 @@
       "pr_auc": 0.3554,
       "at_capacity": {
         "k": 300,
-        "precision": 0.37,
-        "recall": 0.422,
-        "saved_rub": 59653408,
-        "cost_rub": 441900,
-        "profit_rub": 59211508
+        "precision": 0.387,
+        "recall": 0.441,
+        "saved_rub": 61564822,
+        "cost_rub": 431400,
+        "profit_rub": 61133422
       },
       "best_k": {
-        "k": 484,
-        "precision": 0.258,
-        "recall": 0.475,
-        "saved_rub": 63469005,
-        "cost_rub": 826500,
-        "profit_rub": 62642505
+        "k": 404,
+        "precision": 0.302,
+        "recall": 0.464,
+        "saved_rub": 62681254,
+        "cost_rub": 652800,
+        "profit_rub": 62028454
       }
     },
     "Логистическая регрессия": {
@@ -55,43 +55,42 @@
       }
     },
     "Градиентный бустинг": {
-      "roc_auc": 0.994,
-      "pr_auc": 0.8003,
+      "roc_auc": 0.9933,
+      "pr_auc": 0.808,
       "at_capacity": {
         "k": 300,
-        "precision": 0.813,
-        "recall": 0.928,
-        "saved_rub": 89586776,
-        "cost_rub": 162600,
-        "profit_rub": 89424176
+        "precision": 0.807,
+        "recall": 0.92,
+        "saved_rub": 89328991,
+        "cost_rub": 166800,
+        "profit_rub": 89162191
       },
       "best_k": {
-        "k": 566,
-        "precision": 0.452,
-        "recall": 0.973,
-        "saved_rub": 91109647,
-        "cost_rub": 735900,
-        "profit_rub": 90373747
+        "k": 410,
+        "precision": 0.62,
+        "recall": 0.966,
+        "saved_rub": 91056897,
+        "cost_rub": 389100,
+        "profit_rub": 90667797
       }
     }
   },
   "top_features": {
-    "in_unique_senders": 0.3846,
-    "in_sum": 0.2848,
-    "in_round_share": 0.1967,
-    "cash_share": 0.1884,
-    "median_min_to_out": 0.0314,
-    "external_share": 0.0256,
-    "account_age_days": 0.0033,
-    "in_elderly_sender_share": 0.0029
+    "in_unique_senders": 0.4825,
+    "in_sum": 0.149,
+    "cash_share": 0.1355,
+    "in_round_share": 0.113,
+    "has_salary": 0.014,
+    "in_elderly_sender_share": 0.0098,
+    "external_share": 0.0078,
+    "median_min_to_out": 0.0071
   },
   "gbm_false_positives_by_segment": {
-    "regular": 44,
-    "student": 10,
-    "seller": 2
+    "regular": 48,
+    "student": 10
   },
   "gbm_recall_at_capacity_by_dropper_type": {
-    "простые": 0.963,
-    "продвинутые": 0.89
+    "простые": 0.956,
+    "продвинутые": 0.882
   }
 }
