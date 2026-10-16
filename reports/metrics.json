@@ -1,0 +1,97 @@
+{
+  "train": {
+    "clients": 39959,
+    "droppers": 199
+  },
+  "test": {
+    "clients": 39963,
+    "droppers": 263
+  },
+  "assumptions": {
+    "review_cost": 150,
+    "fp_block_cost": 2100,
+    "saved_share": 0.5,
+    "capacity": 300
+  },
+  "models": {
+    "Правила": {
+      "roc_auc": 0.7297,
+      "pr_auc": 0.3554,
+      "at_capacity": {
+        "k": 300,
+        "precision": 0.37,
+        "recall": 0.422,
+        "saved_rub": 59653408,
+        "cost_rub": 441900,
+        "profit_rub": 59211508
+      },
+      "best_k": {
+        "k": 484,
+        "precision": 0.258,
+        "recall": 0.475,
+        "saved_rub": 63469005,
+        "cost_rub": 826500,
+        "profit_rub": 62642505
+      }
+    },
+    "Логистическая регрессия": {
+      "roc_auc": 0.9965,
+      "pr_auc": 0.7469,
+      "at_capacity": {
+        "k": 300,
+        "precision": 0.713,
+        "recall": 0.814,
+        "saved_rub": 82524059,
+        "cost_rub": 225600,
+        "profit_rub": 82298459
+      },
+      "best_k": {
+        "k": 737,
+        "precision": 0.339,
+        "recall": 0.951,
+        "saved_rub": 90449845,
+        "cost_rub": 1133250,
+        "profit_rub": 89316595
+      }
+    },
+    "Градиентный бустинг": {
+      "roc_auc": 0.994,
+      "pr_auc": 0.8003,
+      "at_capacity": {
+        "k": 300,
+        "precision": 0.813,
+        "recall": 0.928,
+        "saved_rub": 89586776,
+        "cost_rub": 162600,
+        "profit_rub": 89424176
+      },
+      "best_k": {
+        "k": 566,
+        "precision": 0.452,
+        "recall": 0.973,
+        "saved_rub": 91109647,
+        "cost_rub": 735900,
+        "profit_rub": 90373747
+      }
+    }
+  },
+  "top_features": {
+    "in_unique_senders": 0.3846,
+    "in_sum": 0.2848,
+    "in_round_share": 0.1967,
+    "cash_share": 0.1884,
+    "median_min_to_out": 0.0314,
+    "external_share": 0.0256,
+    "account_age_days": 0.0033,
+    "in_elderly_sender_share": 0.0029
+  },
+  "gbm_false_positives_by_segment": {
+    "regular": 44,
+    "student": 10,
+    "seller": 2
+  },
+  "gbm_recall_at_capacity_by_dropper_type": {
+    "простые": 0.963,
+    "продвинутые": 0.89
+  }
+}
