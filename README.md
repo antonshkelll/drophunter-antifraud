@@ -1,5 +1,7 @@
 # DropHunter
 
+[![CI](https://github.com/antonshkelll/drophunter-antifraud/actions/workflows/ci.yml/badge.svg)](https://github.com/antonshkelll/drophunter-antifraud/actions/workflows/ci.yml) ![Python](https://img.shields.io/badge/Python-3.12-3776AB) ![License](https://img.shields.io/badge/license-MIT-lightgrey)
+
 Модель, которая ищет дропперов: счета, через которые мошенники выводят деньги жертв. Признаки собираются на SQL, модель — градиентный бустинг, а порог выбирается не по ROC-AUC, а по деньгам с учётом того, сколько алертов успевает разобрать команда.
 
 <p align="center"><img src="reports/figures/profit_curve.png" width="560" alt="Профит в зависимости от порога"></p>
@@ -118,3 +120,10 @@ python src/train.py
 ## Стек
 
 Python · DuckDB (CTE, оконные функции, ASOF JOIN) · pandas · scikit-learn · matplotlib
+
+## Связанные проекты
+
+- [Экономика быстрого платежа](https://github.com/antonshkelll/sbp-economics) — 37% похищенного во II кв. 2026 — через СБП
+- [Uplift](https://github.com/antonshkelll/uplift-targeting) — causal ML на реальном эксперименте
+
+Все проекты — в [профиле](https://github.com/antonshkelll).
