@@ -19,3 +19,4 @@ jobs:
         run: |
           python src/generate_data.py
           python src/train.py > /dev/null
+          python src/monitoring.py > /dev/null

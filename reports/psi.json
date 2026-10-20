@@ -1,0 +1,124 @@
+{
+  "base_period": "2026-04-01 — 2026-05-31",
+  "new_period": "2026-05-31 — 2026-07-30",
+  "thresholds": {
+    "stable": 0.1,
+    "shift": 0.25
+  },
+  "counts": {
+    "стабильно": 21,
+    "сильный дрейф": 1
+  },
+  "features": [
+    {
+      "feature": "in_new_sender_share",
+      "psi": 12.1399,
+      "status": "сильный дрейф"
+    },
+    {
+      "feature": "account_age_days",
+      "psi": 0.0059,
+      "status": "стабильно"
+    },
+    {
+      "feature": "in_round_share",
+      "psi": 0.0041,
+      "status": "стабильно"
+    },
+    {
+      "feature": "in_sum",
+      "psi": 0.0032,
+      "status": "стабильно"
+    },
+    {
+      "feature": "passthrough_ratio",
+      "psi": 0.0013,
+      "status": "стабильно"
+    },
+    {
+      "feature": "in_cnt",
+      "psi": 0.001,
+      "status": "стабильно"
+    },
+    {
+      "feature": "median_min_to_out",
+      "psi": 0.001,
+      "status": "стабильно"
+    },
+    {
+      "feature": "in_max_amount",
+      "psi": 0.0008,
+      "status": "стабильно"
+    },
+    {
+      "feature": "external_share",
+      "psi": 0.0006,
+      "status": "стабильно"
+    },
+    {
+      "feature": "out_cnt",
+      "psi": 0.0006,
+      "status": "стабильно"
+    },
+    {
+      "feature": "cash_share",
+      "psi": 0.0005,
+      "status": "стабильно"
+    },
+    {
+      "feature": "out_sum",
+      "psi": 0.0005,
+      "status": "стабильно"
+    },
+    {
+      "feature": "in_unique_senders",
+      "psi": 0.0004,
+      "status": "стабильно"
+    },
+    {
+      "feature": "max_daily_senders",
+      "psi": 0.0004,
+      "status": "стабильно"
+    },
+    {
+      "feature": "in_elderly_sender_share",
+      "psi": 0.0003,
+      "status": "стабильно"
+    },
+    {
+      "feature": "in_night_share",
+      "psi": 0.0001,
+      "status": "стабильно"
+    },
+    {
+      "feature": "out_night_share",
+      "psi": 0.0001,
+      "status": "стабильно"
+    },
+    {
+      "feature": "age",
+      "psi": 0.0,
+      "status": "стабильно"
+    },
+    {
+      "feature": "has_salary",
+      "psi": 0.0,
+      "status": "стабильно"
+    },
+    {
+      "feature": "devices",
+      "psi": 0.0,
+      "status": "стабильно"
+    },
+    {
+      "feature": "days_since_phone_change",
+      "psi": 0.0,
+      "status": "стабильно"
+    },
+    {
+      "feature": "out_within_1h_share",
+      "psi": 0.0,
+      "status": "стабильно"
+    }
+  ]
+}
