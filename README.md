@@ -125,7 +125,7 @@ Python · DuckDB (CTE, оконные функции, ASOF JOIN) · pandas · sc
 
 ## Связанные проекты
 
-- [Экономика быстрого платежа](https://github.com/antonshkelll/sbp-economics): 37% похищенного во II кв. 2026 ушло через СБП ([калькулятор](https://sbp.antonshkel.ru))
+- [Экономика быстрого платежа](https://github.com/antonshkelll/sbp-economics): 37% похищенного во II кв. 2026 ушло через СБП ([калькулятор](https://antonshkelll.github.io/sbp-economics/))
 - [Uplift](https://github.com/antonshkelll/uplift-targeting): causal ML на реальном эксперименте
 
 Все проекты собраны в [профиле](https://github.com/antonshkelll).
